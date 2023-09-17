@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body
+		{
+			margin: auto;
+		}
+		#wrapper
+		{
+			width: 1520px;
+			height: 1700px;
+			font-family: cursive;
+		}
+		#header
+		{
+			width: 100%;
+			height: 350px;
+			background-image: url(images2/slidea.jpg);
+			background-size: cover;
+			margin-top: -50px;
+			animation-name: animatedBackground;
+			animation-duration: 10s;
+			animation-iteration-count: 5;
+			animation-direction: alternate;
+			animation-timing-function: linear;
+		}
+		@keyframes animatedBackground
+		{
+			0%
+			{
+				background-image: url(images2/slide.jpg);
+			}
+			20%
+			{
+				background-image: url(images2/slide1.jpg);
+			}
+			40%
+			{
+				background-image: url(images2/slide2.jpg);
+			}
+			60%
+			{
+				background-image: url(images2/slide.jpg);
+			}
+			80%
+			{
+				background-image: url(images2/slide1.jpg);
+			}
+			100%
+			{
+				background-image: url(images2/slide2.jpg);
+			}
+
+		}
+		#d1
+		{
+			width: 1000px;
+			background-color: red;
+			left: 270px;
+		  right: 270px;
+		  border-radius: 10px;
+		  border: 2px soli red ;
+		  position: fixed;
+		  z-index: 1;
+		  cursor: pointer;
+		  transition: transform 0.5s;
+		  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+
+
+		}
+		#d1:hover
+		{
+			transform: scale(1.1);
+		}
+
+
+
+		
+		.d11
+		{
+			height: 20px;
+			width: 200px;
+			float: left;
+			color: white;
+			padding-top: 25px ;
+			padding-bottom: 25px;
+			text-align:center ;
+		}
+		a
+		{
+			color: white;
+			text-decoration: none;
+
+		}
+
+		#d1a
+		{
+      padding-top: 180px;
+      font-style: italic;
+      font-size: 50px;
+      text-shadow: 1px 1px red;
+      margin-left: -140px;
+		}
+		
+    #w
+    {
+      color: white;
+      padding-top: 50px;
+      padding-left: 50px;
+    }
+
+    #x
+    {
+      color: white;
+      padding-top: 0px;
+      padding-left: 110px;
+    }
+
+    #y
+    {
+      padding-left: 100px; 
+    }
+
+    #z
+    {
+      color: red;
+      background-color: white;
+      border-style: none;
+    }
+
+    #z:hover
+    {
+       
+      background-color: red;
+      color: white;
+    }
+
+    #center
+		{
+      padding-left: 300px;
+      padding-right: 230px;
+      z-index: 2;
+      height: 420px;
+		}
+		#left
+		{
+			width: 300px;
+			height: 364px;
+			background-image: url(images2/page2_img1.jpg);
+			float: left;
+			position: relative;
+			margin-left: 20px;
+			margin-top:50px;
+			transition: transform 0.5s;
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+			cursor: pointer;
+		}
+
+		#left:hover
+		{
+			transform: scale(1.1);
+		}
+
+		 #middle
+		{
+			width: 300px;
+			height: 364px;
+			background-image: url(images2/page2.jpg);
+			float: left;
+			position: relative;
+		  margin-left:20px;
+			margin-top:50px;
+      transition: transform 0.5s;
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+			cursor: pointer;			
+  	}
+
+		#middle:hover
+		{
+			transform: scale(1.1);
+		}
+
+		#right
+		{
+			width: 300px;
+			height: 364px;
+			background-image: url(images2/page2_img3.jpg);
+			float: left;
+			position: relative;
+			margin-left:20px;
+		  margin-top:50px;
+		  transition: transform 0.5s;
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+			cursor: pointer;
+			
+		}
+
+		#right:hover
+		{
+			transform: scale(1.1);
+		}
+
+		#left1
+		{
+			width: 300px;
+			height: 364px;
+			background-image: url(images2/page2_img4.jpg);
+			float: left;
+			position: relative;
+			margin-left: 20px;
+			margin-top:50px;
+			transition: transform 0.5s;
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+			cursor: pointer;
+		}
+		#left1:hover
+		{
+			transform: scale(1.1);
+		}
+	  #middle1
+		{
+			width: 300px;
+			height: 364px;
+			background-image: url(images2/page2_img5.jpg);
+			float: left;
+			position: relative;
+		  margin-left:20px;
+			margin-top:50px;
+			transition: transform 0.5s;
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+			cursor: pointer;
+		}
+
+		#middle1:hover
+		{
+			transform: scale(1.1);
+		}
+
+		#right1
+		{
+			width: 300px;
+			height: 364px;
+			background-image: url(images2/page2_img6.jpg);
+			float: left;
+			position: relative;
+			margin-left:20px;
+		  margin-top:50px;
+		  transition: transform 0.5s;
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+			cursor: pointer;
+			
+		}
+		
+		#right1:hover
+		{
+			transform: scale(1.1);
+		}
+
+		#left2
+		{
+			width: 300px;
+			height: 364px;
+			background-image: url(images2/page2_img7.jpg);
+			float: left;
+			position: relative;
+			margin-left: 20px;
+			margin-top:50px;
+			transition: transform 0.5s;
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+			cursor: pointer;
+		}
+
+		#left2:hover
+		{
+			transform: scale(1.1);
+		}
+
+		#middle2
+	  {
+			width: 300px;
+			height: 364px;
+			background-image: url(images2/page2_img8.jpg);
+			float: left;
+			position: relative;
+		  margin-left:20px;
+			margin-top:50px;
+			transition: transform 0.5s;
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+			cursor: pointer;
+		}
+
+		#middle2:hover
+		{
+			transform: scale(1.1);
+		}
+
+	 #center1
+		{
+      padding-left: 300px;
+      padding-right: 230px;
+      z-index: 2;
+      height: 420px;
+		}
+
+		#center2
+		{
+      padding-left: 300px;
+      padding-right: 230px;
+      z-index: 2;
+      height: 520px;
+		}
+
+		#y
+    {
+      padding-left: 50px; 
+    }
+    #z
+    {
+      color: red;
+     	background-color: white;
+     	border-style: none;
+     	border-radius: 50px;	    
+		  height: 50px;
+	    width: 150px;
+	    margin-left: 20px;
+	    transition: transform 0.5s;
+  	  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+		  cursor: pointer;
+	  }
+    #z:hover
+    {
+      transform: scale(1.2);
+     	background-color: red;
+     	color: white;
+    }
+		#footer
+		{
+			
+			width: 1370px;
+			height: 20px;			
+			background-color: #003152;
+			padding-left: 100px;
+			padding-top: 50px;
+			padding-bottom: 50px;
+			padding-right: 50px;
+			color: white;
+		}	
+		#img1
+		{
+			width: 50px;
+			height: 50px;
+			background-image: url(images2/fb1.jpg);
+			background-size: contain;
+			float: right;
+			margin-left: 10px;
+			cursor: pointer;
+		}
+		#img1:hover
+		{
+			background-image: url(images2/fb2.png);
+		}
+		#img2
+		{
+			width: 50px;
+			height: 50px;
+			background-image: url(images2/tw1.jpg);
+			background-size: contain;
+			float: right;
+			margin-left: 10px;
+			cursor: pointer;
+		}
+		#img2:hover
+		{
+			background-image: url(images2/tw2.png);
+		}
+		#img3
+		{
+			width: 50px;
+			height: 50px;
+			background-image: url(images2/ins1.png);
+			background-size: contain;
+			float: right;
+			margin-left: 10px;
+			cursor: pointer;
+		}
+		#img3:hover
+		{
+			background-image: url(images2/ins2.png);
+		}
+
+
+		
+     
+		 
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+
+			<div id="d1">
+				<div class="d11"><a href="homes.html">HOME</a></div> 
+			    <div class="d11"><a href="hottours.html">HOT TOURS</a></div> 
+			    <div class="d11"><a href="specialoffers.html">SPECIAL OFFERS</a></div> 
+			    <div class="d11"><a href="blog.html">BLOG</a></div> 
+			    <div class="d11"><a href="contacts.html">CONTACTS</a></div> 
+			 </div>
+			 <p id="d1a" align="center" > <a href="#">your trip</a></p>
+		</div>
+
+		<div id="center">
+			<div id="left" >
+				<p ><h1 id="w">NEWSLAND<h1>
+					<h3 id="x">FROM<br>
+                 $ 1800</h4>
+
+                <p id="y"> <a href="#"><input id="z"  type="submit" name="" value="LEARN MORE" align="center"></a></p>
+                </p>
+			</div>
+			<div id="middle" >
+				<p ><h1 id="w" >&nbsp;&nbsp;&nbsp;&nbsp;GOA<h1>
+					<h3 id="x">FROM<br>
+                 $ 1100</h4>
+
+                <p id="y"> <a href="#"><input id="z"  type="submit" name="" value="LEARN MORE" align="center"></a></p>
+                </p>
+			</div>
+	        <div id="right" >
+				<p ><h1 id="w" >&nbsp;&nbsp;&nbsp;FRANCE<h1>
+					<h3 id="x">FROM<br>
+                 $ 1700</h4>
+
+                <p id="y"> <a href="#"><input id="z"  type="submit" name="" value="LEARN MORE" align="center"></a></p>
+                </p>
+            </div>
+            
+		</div>
+		<div id="center1">
+			<div id="left1" >
+				<p ><h1 id="w">&nbsp;&nbsp;&nbsp;CANADA<h1>
+					<h3 id="x">FROM<br>
+                 $ 1900</h4>
+
+                <p id="y"> <a href="#"><input id="z"  type="submit" name="" value="LEARN MORE" align="center"></a></p>
+                </p>
+			</div>
+			<div id="middle1" >
+				<p ><h1 id="w" >&nbsp;&nbsp;&nbsp;TURKEY<h1>
+					<h3 id="x">FROM<br>
+                 $ 1300</h4>
+
+                <p id="y"> <a href="#"><input id="z"  type="submit" name="" value="LEARN MORE" align="center"></a></p>
+                </p>
+			</div>
+	        <div id="right1" >
+				<p ><h1 id="w" >&nbsp;&nbsp;&nbsp;EGYPT<h1>
+					<h3 id="x">FROM<br>
+                 $ 1600</h4>
+
+                <p id="y"> <a href="#"><input id="z"  type="submit" name="" value="LEARN MORE" align="center"></a></p>
+                </p>
+            </div>
+            
+		</div>
+		<div id="center2">
+			<div id="left2" >
+				<p ><h1 id="w">&nbsp;&nbsp;&nbsp;JAPAN<h1>
+					<h3 id="x">FROM<br>
+                 $ 1000</h4>
+
+                <p id="y"> <a href="#"><input id="z"  type="submit" name="" value="LEARN MORE" align="center"></a></p>
+                </p>
+			</div>
+			<div id="middle2" >
+				<p ><h1 id="w" >&nbsp;&nbsp;BRAZIL<h1>
+					<h3 id="x">FROM<br>
+                 $ 1700</h4>
+
+                <p id="y"> <a href="#"><input id="z"  type="submit" name="" value="LEARN MORE" align="center"></a></p>
+                </p>
+			</div>
+		</div>
+		
+
+
+		
+            
+		
+	</div>
+	<div id="footer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YOUR TRIP (C) 2014 | PRIVACY POLICY | WEBSITE TEMPLATE DESIGNED BY TEMPLATEMONSTER.COM
+	
+				     
+		<div id="img1"></div>
+		<div id="img2"></div>
+		<div id="img3"></div> 
+	</div>
+
+	
+</body>
+</html>

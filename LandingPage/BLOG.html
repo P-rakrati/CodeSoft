@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body
+		{
+			margin: auto;
+		}
+		#wrapper
+		{
+           width: 1520px;
+           height: 2300px;
+           font-family: cursive;
+           
+			
+		}
+		#header
+		{
+			width: 100%;
+			height: 350px;
+			background-image: url(images2/slidea.jpg);
+			background-size: cover;
+			margin-top: -50px;
+			animation-name: animatedBackground;
+			animation-duration: 10s;
+			animation-iteration-count: 5;
+			animation-direction: alternate;
+			animation-timing-function: linear;
+		}
+		@keyframes animatedBackground
+		{
+			0%
+			{
+				background-image: url(images2/slide.jpg);
+			}
+			20%
+			{
+				background-image: url(images2/slide1.jpg);
+			}
+			40%
+			{
+				background-image: url(images2/slide2.jpg);
+			}
+			60%
+			{
+				background-image: url(images2/slide.jpg);
+			}
+			80%
+			{
+				background-image: url(images2/slide1.jpg);
+			}
+			100%
+			{
+				background-image: url(images2/slide2.jpg);
+			}
+
+		}
+		#d1
+		{
+			width: 1000px;
+			background-color: red;
+			left: 270px;
+		    right: 270px;
+		    border: 2px solid red;
+		    border-radius: 10px;
+			
+		    position: fixed;
+			z-index: 1;
+		    cursor: pointer;
+		    transition: transform 0.5s;
+		    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+
+
+		}
+		#d1:hover
+		{
+			transform: scale(1.1);
+		}
+
+
+
+		
+		.d11
+		{
+			height: 20px;
+			width: 200px;
+			float: left;
+			color: white;
+			padding-top: 25px ;
+			padding-bottom: 25px;
+			text-align:center ;
+			
+			
+		}
+		a
+		{
+			color: white;
+			text-decoration: none;
+
+		}
+		
+		#d1a
+		{
+           padding-top: 180px;
+           font-style: italic;
+           font-size: 50px;
+           text-shadow: 1px 1px red;
+		}
+		#d
+		{
+			height: 1700px;
+			width: 1520px;
+			
+		}
+		 
+		#da1
+		{
+           width: 600px;
+           height:800px;
+          
+          margin-left: 300px;
+         margin-top:100px;
+		}
+		#ts 
+		{
+
+           text-shadow: 2px 2px limegreen;
+		}
+		#c1
+		{
+			height: 50px;
+			width: 50px;
+			color: white;
+			background-color: red;
+			margin-top:4px;
+			position: absolute;
+		}
+
+		
+		#da11
+		{
+           width: 600px;
+           height:400px;
+           background-image: url(images2/page4_img1.jpg);
+           background-size: cover;
+           transition: transform 0.5s;
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+			cursor: pointer;
+			
+		}
+		#da11:hover
+		{
+			transform: scale(1.1);
+		}
+		#da12
+		{
+           width: 600px;
+           height:200px;
+          
+           float: right;
+           margin-top: 20px;
+          
+          
+           
+		}
+		#z
+        {
+        	color: red;
+        	background-color: lightgray;
+        	border-style: none;
+        }
+        #z:hover
+        {
+       
+        	background-color: red;
+        	color: white;
+        }
+        #y
+        {
+            padding-left:  100px; 
+            margin-left: -100px;
+
+        }
+        #i
+		{
+			color: red;
+			background-color: lightgray;
+			border-radius: 50px;
+			border-style: none;
+			height: 40px;
+			width: 150px;
+			transition: transform 0.5s;
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+			cursor: pointer;
+			
+
+	
+		}
+		#i:hover
+        {
+            transform: scale(1.2);
+        	background-color:  red;
+        	color: white;
+        }
+        #da2
+		{
+           width: 600px;
+           height:700px;
+           
+           float: left;
+          margin-left: 300px;
+         margin-top:100px;
+		}
+	
+		#da21
+		{
+           width: 600px;
+           height:400px;
+           background-image: url(images2/page4_img2.jpg);
+           background-size: cover;
+           transition: transform 0.5s;
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+			cursor: pointer;
+			
+           
+		}
+		#da21:hover
+		{
+			transform: scale(1.1);
+		}
+		#da22
+		{
+           
+           width: 600px;
+           height:200px;
+           
+           float: right;
+           margin-top: 20px;
+          
+          
+           
+		}
+		#da13
+		{
+			height: 800px;
+        	width: 250px;
+        	
+        	float: right;
+        	
+        	margin-left: -200px;
+        	padding-left: 200px;
+        	margin-top: -800px;
+          
+		}
+		li
+        {
+           color: gray;
+           font-size: 25px;
+           margin-left: -150px;
+        
+        }
+        p
+        {
+        	color:#003152 ;
+        	margin-left: -150px;
+        	font-size: 30px;
+        	
+        }
+        #c1
+        {
+        	border-radius: 10px;
+        	text-align: center;
+            transition: transform 0.5s;
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+			cursor: pointer;
+			
+        }
+        #c1:hover
+        {
+        
+         transform: translatey(-10px);
+        }
+       #footer
+		{
+			
+			width: 1370px;
+			height: 20px;			
+			background-color: #003152;
+			padding-left: 150px;
+			padding-top: 50px;
+			padding-bottom: 80px;
+			
+	        margin-top: 1000px;
+			color: white;
+			position: absolute;
+			
+
+		}
+		#img1
+		{
+			width: 50px;
+			height: 50px;
+			background-image: url(images2/fb1.jpg);
+			background-size: contain;
+			float: right;
+			margin-right: 15px;
+			cursor: pointer;
+			
+		}
+		#img1:hover
+		{
+			background-image: url(images2/fb2.png);
+		}
+		#img2
+		{
+			width: 50px;
+			height: 50px;
+			background-image: url(images2/tw1.jpg);
+			background-size: contain;
+			float: right;
+			margin-right: 15px;
+			cursor: pointer;
+			
+		}
+		#img2:hover
+		{
+			background-image: url(images2/tw2.png);
+		}
+		#img3
+		{
+			width: 50px;
+			height: 50px;
+			background-image: url(images2/ins1.png);
+			background-size: contain;
+			float: right;
+			margin-right: 15px;
+			cursor: pointer;
+
+
+		}
+		#img3:hover
+		{
+			background-image: url(images2/ins2.png);
+		}
+	
+		
+	</style>
+        
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+
+			<div id="d1">
+				<div class="d11"><a href="HOMES.html">HOME</a></div> 
+			    <div class="d11"><a href="hottours.html">HOT TOURS</a></div> 
+			    <div class="d11"><a href="specialoffers.html">SPECIAL OFFERS</a></div> 
+			    <div class="d11"><a href="blog.html">BLOG</a></div> 
+			    <div class="d11"><a href="contacts.html">CONTACTS</a></div> 
+			 </div>
+			 <p id="d1a" align="center" > <a href="#">your trip</a></p>
+		</div>
+		<div id="d">
+			<div id="da1">
+			     <h2><font size="6px" id="ts">RECENT POSTS</font></h2>
+			     <div id="c1">15<br>FEB</div>
+			      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			     &nbsp; &nbsp; &nbsp; <font size="4px" color="orange" >UAMNIBH EDET MERTOLO NUMI<br></font>
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			     &nbsp; &nbsp; &nbsp; <font size="4px" color="gray"> Posted by Admin<br><br>
+			     
+
+				<div id="da11"></div>
+			    <div id="da12"><br>
+			    	Cras facilisis, nulla vel viverra auctor, leo gna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus diam, a celerisque eros convallis accumsan.<br><br><br>
+
+                    Maecenas vehicula egestas venenatis. Duis massa elit, auctor non pellentesque vel aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibh
+                    <p id="y"> <a href="#"><input id="i"  type="submit" name="" value="LEARN MORE" align="center"></a></p>
+                </p>
+			    </div>
+                				
+			</div>
+			<div id="da13">
+				        <p id="ts">CATEGORIES</p>
+				       <ul>
+                           <li>Sespendisse massa mic</li>
+                           <li>Porttitor at velit id</li>
+                           <li>Congue adipiscing</li>
+                           <li>Vestibulum vitae porta</li>
+                           <li>Vivamus ac sodales</li>
+                           <li>Massa quis adipiscing</li>
+                           <li>Phasellus hendrerit</li>
+                           <li>Libero in sapien</li>
+                           <li>Dignissim vel imperdiet</li>
+                       </ul>
+                       <br><br><br>
+                       <p id="ts">ARCHIVES</p>
+                       <ul>
+                            <li>November 2013</li>
+                              <li>October 2013</li>
+                              <li>September 2013</li>
+                              <li>August 2013</li>
+                              <li>July 2013</li>
+                       </ul>
+			</div>
+			<div id="da2">
+				<div id="c1">16<br>FEB</div>
+
+			     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<font size="4px" color="orange">MBHERH EMERTLO NUMOLO<br></font>
+                  &nbsp; &nbsp; &nbsp;
+			     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;<font size="4px" color="gray" > Posted by Admin<br><br>
+				<div id="da21"></div>
+			    <div id="da22">
+			    	
+			    	Cras facilisis, nulla vel viverra auctor, leo gna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus diam, a celerisque eros convallis accumsan.<br><br><br>
+
+                    Maecenas vehicula egestas venenatis. Duis massa elit, auctor non pellentesque vel aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibh<br><br>
+                    <p id="y"> <a href="#"><input id="i"  type="submit" name="" value="LEARN MORE" align="center"></a></p>
+                </p>
+			    </div>
+			  
+			</div>
+			<div id="footer">
+				YOUR TRIP (C) 2014 | PRIVACY POLICY | WEBSITE TEMPLATE DESIGNED BY TEMPLATEMONSTER.COM
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	
+				     
+		<div id="img1"></div>
+		<div id="img2"></div>
+		<div id="img3"></div> 
+	</div>
+			
+			
+			
+			
+
+</body>
+</html>

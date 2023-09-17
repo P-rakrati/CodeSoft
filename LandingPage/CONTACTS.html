@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body
+		{
+			margin: auto;
+		}
+		#wrapper
+		{
+			width: 1520px;
+			height: 1300px;
+			font-family: cursive;
+
+		}
+		#header
+		{
+			width: 1520px;
+			height: 350px;
+			background-image: url(images2/slidea.jpg);
+			background-size: cover;
+			margin-top: -50px;
+			animation-name: animatedBackground;
+			animation-duration: 10s;
+			animation-iteration-count: 5;
+			animation-direction: alternate;
+			animation-timing-function: linear;
+		}
+		@keyframes animatedBackground
+		{
+			0%
+			{
+				background-image: url(images2/slide.jpg);
+			}
+			20%
+			{
+				background-image: url(images2/slide1.jpg);
+			}
+			40%
+			{
+				background-image: url(images2/slide2.jpg);
+			}
+			60%
+			{
+				background-image: url(images2/slide.jpg);
+			}
+			80%
+			{
+				background-image: url(images2/slide1.jpg);
+			}
+			100%
+			{
+				background-image: url(images2/slide2.jpg);
+			}
+
+		}
+		#d1
+		{
+			width: 1000px;
+			background-color: red;
+			left: 270px;
+		    right: 270px;
+		    border-radius: 10px;
+		    border: 2px solid red ;
+			
+		    position: fixed;
+			z-index: 1;
+			cursor: pointer;
+	   	transition: transform 0.5s;
+		  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+
+
+
+		}
+		#d1:hover
+		{
+			transform: scale(1.1);
+		}
+
+
+			
+
+
+
+		
+		.d11
+		{
+			height: 20px;
+			width: 200px;
+			float: left;
+			color: white;
+			padding-top: 25px ;
+			padding-bottom: 25px;
+			text-align:center ;
+			
+			
+		}
+		a
+		{
+			color: white;
+			text-decoration: none;
+
+		}
+		
+		#d1a
+		{
+           padding-top: 180px;
+           font-style: italic;
+           font-size: 50px;
+           text-shadow: 1px 1px red;
+           margin-left: -140px;
+		}
+		#d
+		{
+           height: 700px;
+           width: 500px;
+           margin-left: 300px;
+           margin-top: 100px;
+           margin-bottom: 100px;
+         
+		}
+		#da
+		{
+           height: 200px;
+           width: 500px;
+         
+		}
+		#dp
+        {
+        	color:#003152 ;
+        	padding-top: 10px;
+        	font-size: 30px;
+        	text-shadow: 2px 2px limegreen;
+        	
+        }
+		#db
+		{
+			width: 500px;
+			height: 350px;
+		
+			background-image: url(images2/map.png);
+			background-size: cover;
+			cursor: pointer;
+		transition: transform 0.5s;
+		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+
+
+		}
+		#db:hover
+		{
+			transform: scale(1.1);
+		}
+		#dc
+		{
+           height: 200px;
+           width: 500px;
+ 
+         
+		}
+		#dp1
+		{
+			margin-top: 50px;
+			margin-left: 50px;
+			color: gray;
+		}
+		#dd
+		{
+			height: 700px;
+        	width: 400px;
+        	
+        	float: right;
+        	
+        	margin-left: 600px;
+        	margin-right: 200px;
+        	
+        	margin-top: -820px;
+        
+          
+		}
+
+		#dp2
+        {
+        	color:#003152 ;
+        	text-shadow: 2px 2px limegreen;
+        	font-size: 30px;
+        	
+        }
+        #y
+        {
+          margin-right: -10px;
+ 
+
+        }
+        .ic
+     {
+
+        transition: transform o.5s ;
+        
+        cursor: pointer;
+        
+        border-radius: 15px;
+        box-shadow: 0 3px #999;
+        border: none;
+         background-color: lightgray;
+         outline: none;
+
+
+     }
+    
+      .ic:focus
+     {
+         transform: scale(1.1);
+         background-color: whitesmoke;
+        
+        
+         box-shadow: 0 3px #999;
+     }
+      
+    
+
+
+       
+        
+        #i
+		     {
+          cursor: pointer;
+	       	transition: transform 0.5s;
+	       	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+        
+        	color: red;
+        	background-color: lightgray;
+        	border-style: none;
+        	border-radius: 20px;
+
+			    
+			    height: 40px;
+			    width: 80px;
+
+
+        
+        
+		}
+		#i:hover
+        {
+        transform: scale(1.2);
+        	background-color: red;
+        	color: white;
+        }
+		#footer
+        {
+          width: 1370px;
+			height: 10px;			
+			background-color: #003152;
+			padding-left: 100px;
+			padding-top: 40px;
+			padding-bottom: 100px;
+			padding-right: 50px;
+			color: white;
+			
+		}
+		#img1
+		{
+			width: 50px;
+			height: 50px;
+			background-image: url(images2/fb1.jpg);
+			background-size: contain;
+			float: right;
+			margin-left: 10px;
+			cursor: pointer;
+		}
+		#img1:hover
+		{
+			background-image: url(images2/fb2.png);
+		}
+		#img2
+		{
+			width: 50px;
+			height: 50px;
+			background-image: url(images2/tw1.jpg);
+			background-size: contain;
+			float: right;
+			margin-left: 10px;
+			cursor: pointer;
+		}
+		#img2:hover
+		{
+			background-image: url(images2/tw2.png);
+		}
+		#img3
+		{
+			width: 50px;
+			height: 50px;
+			background-image: url(images2/ins1.png);
+			background-size: contain;
+			float: right;
+			margin-left: 10px;
+			cursor: pointer;
+		}
+		#img3:hover
+		{
+			background-image: url(images2/ins2.png);
+		}
+
+		
+		
+	</style>
+
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+
+			<div id="d1">
+				<div class="d11"><a href="homes.html">HOME</a></div> 
+			    <div class="d11"><a href="hottours.html">HOT TOURS</a></div> 
+			    <div class="d11"><a href="specialoffers.html">SPECIAL OFFERS</a></div> 
+			    <div class="d11"><a href="blog.html">BLOG</a></div> 
+			    <div class="d11"><a href="contacts.html">CONTACTS</a></div> 
+			 </div>
+			 <p id="d1a" align="center" > <a href="#">your trip</a></p>
+		</div>
+		<div id="d">
+			<div id="da">
+				<p id="dp"> CONTACT INFO</p>
+               <p><font color="gray"> Maecenas vehicula egestas venenatis. Duis massa elit, auctor non pellentesque vel aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibh.</font></p>
+               </p>
+				
+			</div>
+			<div id="db">
+			</div>
+			<div id="dc">
+				<p id="dp1">
+				The Company Name Inc.<br>
+                8901 Marmora Road,<br>
+                Glasgow, D04 89GR.<br>
+                Freephone:+1 800 559 6580<br>
+                Telephone:+1 800 603 6035<br>
+                FAX:+1 800 889 9898<br>
+                E-mail: mail@demolink.org<br>
+            </p>
+			</div>
+				
+			</div>
+			<div id="dd">
+				<p id="dp2">GET IN TOUCH</p>
+				<input class="ic" type="text" placeholder="Name:" name="Name"><br><br>
+				<input class="ic" type="E-mail" placeholder="E-mail" name="E-mail"><br><br>
+				<input class="ic" type="text" placeholder="Country" name="Name"><br><br>
+				<textarea  class="ic" rows="10" cols="50" placeholder="Message:"></textarea><br>
+				 
+				 <p > <a href="#"><input id="i"  type="submit" name="" value="Clear" ></a></p>
+                </p>
+                <p > <a href="#"><input id="i"  type="submit" name="" value="Submit" ></a></p>
+                </p>
+
+				
+			</div>
+			
+		</div>
+		<div id="footer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YOUR TRIP (C) 2014 | PRIVACY POLICY | WEBSITE TEMPLATE DESIGNED BY TEMPLATEMONSTER.COM
+	
+				     
+		<div id="img1"></div>
+		<div id="img2"></div>
+		<div id="img3"></div> 
+	
+			</div>
+
+</body>
+</html>

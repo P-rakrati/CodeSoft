@@ -1,0 +1,639 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body
+		{
+			margin: auto;
+		}
+		#wrapper
+		{
+			 width: 1520px;
+			 height: 1800px;
+			 font-family: cursive;
+
+		}
+		#header
+		{
+			width: 1520px;
+			height: 720px;
+			background-image: url(images2/slide.jpg);
+			background-size: cover;
+			margin: 0px;
+			margin-top:  -30px;
+			animation-name: animatedBackground;
+			animation-duration: 10s;
+			animation-iteration-count: 5;
+			animation-direction: alternate;
+			animation-timing-function: linear;
+		}
+		
+		@keyframes animatedBackground
+		{
+			0%
+			{
+				background-image: url(images2/slide.jpg);
+			}
+			20%
+			{
+				background-image: url(images2/slide1.jpg);
+			}
+			40%
+			{
+				background-image: url(images2/slide2.jpg);
+			}
+			60%
+			{
+				background-image: url(images2/slide.jpg);
+			}
+			80%
+			{
+				background-image: url(images2/slide1.jpg);
+			}
+			100%
+			{
+				background-image: url(images2/slide2.jpg);
+			}
+
+		}
+		#d1
+		{
+			width: 1000px;
+			background-color: red;
+			left: 270px;
+		    right: 270px;
+		    border-radius: 10px;
+			border: 2px solid red;
+		    position: fixed;
+			z-index: 1;
+			cursor: pointer;
+		    transition: transform 0.5s;
+		    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+
+
+		}
+		#d1:hover
+		{
+			transform: scale(1.1);
+
+		}
+		#d1a
+		{
+           padding-top: 130px;
+           font-style: italic;
+           font-size: 40px;
+           text-shadow: 1px 1px red;
+
+		}
+		#d1b
+		{
+			font-size: 80px;
+			color: orange;	
+            text-shadow: 1px 1px white;
+		}
+		
+		#d1c
+		{
+			font-size: 30px;
+			color: white;
+			margin-top:  -50px;
+		}
+		#d1e
+		{
+			color: white;
+			background-color: red;
+			border-radius: 50px;
+			border-style: none;
+			height: 50px;
+			width: 200px;
+		    cursor: pointer;
+		    transition: transform 0.5s;
+		    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+
+	
+		}
+		#d1e:hover
+        {
+       
+        	background-color:  #003152;
+        	color: white;
+        	transform: scale(1.1);
+        }
+		#d11
+		{
+			height: 20px;
+			width: 200px;
+			float: left;
+			color: white;
+			padding-top: 25px ;
+			padding-bottom: 25px;
+			text-align:center ;
+			
+			
+		}
+		#d12
+		{
+			height: 20px;
+			width: 200px;
+			float: left;
+			color: white;
+			padding-top: 25px ;
+			padding-bottom: 25px;
+			text-align:center ;
+			
+			
+		}
+		#d13
+		{
+			height: 20px;
+			width: 200px;
+			float: left;
+			color: white;
+			padding-top: 25px ;
+			padding-bottom: 25px;
+			text-align:center ;
+			
+		}
+		#d14
+		{
+			height: 20px;
+			width: 200px;
+			float: left;
+			color: white;
+			padding-top: 25px ;
+			padding-bottom: 25px;
+			text-align:center ;
+			
+		}
+		a
+		{
+			color: white;
+			text-decoration: none;
+			
+
+		}
+		
+		#d15
+		{
+			height: 20px;
+			width: 200px;
+			float: left;
+			color: white;
+			text-align:center ;
+			padding-top: 25px ;
+			padding-bottom: 25px;
+			
+		}
+
+		
+		#center
+		{
+           padding-left: 280px;
+           padding-right: 250px;
+           z-index: 2;
+          
+
+		}
+    
+		#left
+		{
+			width: 300px;
+			height: 364px;
+			background-image: url(images2/ban.jpg);
+			float: left;
+			position: relative;
+			margin-right: 20px;
+		    transition: transform 0.5s;
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+			
+			
+			top: -70px;
+
+
+		}
+		#left:hover
+		{
+			transform: scale(1.1);
+			
+		}
+        #w
+        {
+        	color: white;
+        	padding-top: 50px;
+        	padding-left: 50px;
+        }
+        #x
+        {
+            color: white;
+            padding-top: 0px;
+            padding-left: 110px;
+        }
+        #y
+        {
+            padding-left: 50px; 
+
+        }
+        #z
+        {
+        	color: red;
+        	background-color: white;
+        	border-style: none;
+        	border-radius: 50px;
+			cursor: pointer;
+		    transition: transform 0.5s;
+		    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+			height: 50px;
+			width: 150px;
+		    margin-left: 20px;
+
+        }
+        #z:hover
+        {
+            transform: scale(1.2);
+        	background-color: red;
+        	color: white;
+        }
+      
+	    #middle
+		{
+			width: 300px;
+			height: 364px;
+			background-image: url(images2/page2.jpg);
+			float: left;
+			position: relative;
+			margin-right: 20px;
+			transition: transform 0.5s;
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+			cursor: pointer;
+			top: -70px;
+
+			
+	
+		}
+		#middle:hover
+		{
+			transform: scale(1.1);
+		}
+		#right
+		{
+			width: 300px;
+			height: 364px;
+			background-image: url(images2/ban_img3.jpg);
+			float: left;
+			position: relative;
+			margin-right: 20px;
+			top: -70px;
+			transition: transform 0.5s;
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+			cursor: pointer;
+		}
+		#right:hover
+		{
+			transform: scale(1.1);
+		}
+		#center1
+		{
+			height: 1050px;
+			padding-left: 280px;
+			padding-right: 250px;
+
+
+
+		}
+		#l1
+		{
+		
+			width: 500px;
+			float: left;
+		}
+		#l2
+		{
+			width: 450px;
+			float: left;
+		}
+		#r1
+		{
+           height:300px;
+
+
+           
+
+
+
+		}
+		#r11
+		{
+			width:220px ;
+			height:100px;
+			background-image: url(images2/pimg1.jpg);
+			background-size: cover;
+			float: left;
+			cursor: pointer;
+		    transition: transform 0.5s;
+		    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+
+	
+		}
+		#r11:hover
+        {
+            transform: translateY(-10px);  
+        }
+
+
+		
+		#r21
+		{
+			width:200px ;
+		    padding-left:50px ;
+		    padding-right: 50px;
+		    float: left;
+		}
+		#r2
+		{
+            height: 450px;
+             
+		}
+		#r21
+		{
+			width:30px ;
+			height:150px;
+			background-image: url(images2/img2p.jpg);
+			background-size: cover;
+			float: left;
+			cursor: pointer;
+		    transition: transform 0.5s;
+		    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+
+	
+		}
+		#r21:hover
+        {
+            transform: translateY(-10px);
+
+          
+        }
+
+
+		
+		#r22a
+		{
+			width:200px ;
+			height:150px ;
+		    padding-left:30px ;
+		    padding-right: 50px;
+		    float: left;
+		
+		}
+		#ts
+		{
+			text-shadow: 2px 2px skyblue;
+		}
+		#i
+		{
+     
+        
+        	color: red;
+        	background-color: lightgray;
+        	border-style: none;
+        	border-radius: 10px;
+			cursor: pointer;
+		    transition: transform 0.5s;
+		    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+			height: 40px;
+			width: 80px;
+
+
+        
+        
+		}
+		#i:hover
+        {
+            transform: scale(1.2);
+        	background-color: red;
+        	color: white;
+        }
+         .ic
+        {
+
+            transition: transform o.5s ;
+            cursor: pointer;
+            border-radius: 15px;
+            box-shadow: 0 3px #999;
+            border: none;
+            background-color: lightgray;
+            outline: none;
+
+
+        }
+    
+        .ic:focus
+        {
+         transform: scale(1.1);
+         background-color: whitesmoke;
+         box-shadow: 0 3px #999;
+        }
+
+		#footer
+		{
+			
+			width: 1370px;
+			height: 10px;			
+			background-color: #003152;
+			padding-left: 100px;
+			padding-top: 40px;
+			padding-bottom: 100px;
+			padding-right: 50px;
+			color: white;
+			margin-top: 40px;
+		}
+		#img1
+		{
+			width: 50px;
+			height: 50px;
+			background-image: url(images2/fb1.jpg);
+			background-size: contain;
+			float: right;
+			margin-left: 10px;
+			cursor: pointer;
+		}
+		#img1:hover
+		{
+			background-image: url(images2/fb2.png);
+		}
+		#img2
+		{
+			width: 50px;
+			height: 50px;
+			background-image: url(images2/tw1.jpg);
+			background-size: contain;
+			float: right;
+			margin-left: 10px;
+			cursor: pointer;
+		}
+		#img2:hover
+		{
+			background-image: url(images2/tw2.png);
+		}
+		#img3
+		{
+			width: 50px;
+			height: 50px;
+			background-image: url(images2/ins1.png);
+			background-size: contain;
+			float: right;
+			margin-left: 10px;
+			cursor: pointer;
+		}
+		#img3:hover
+		{
+			background-image: url(images2/ins2.png);
+		}
+
+    </style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+
+			<div id="d1">
+				
+				
+
+			    <div id="d11"><a href="HOMES.html">HOME</a></div> 
+			    <div id="d12"><a href="HOTTOURS.html">HOT TOURS</a></div> 
+			    <div id="d13"><a href="SPECIALOFFERS.html">SPECIAL OFFERS</a></div> 
+			    <div id="d14"><a href="BLOG.html">BLOG</a></div> 
+			    <div id="d15"><a href="CONTACTS.html">CONTACTS</a></div> 
+			 </div>
+			 <h1 id="d1a" align="center" > <a href="#">your trip</a></h1>
+			 
+				<p id="d1b" align="center"> LONDON</p>
+				<p id="d1c" align="center"> From<br><br>$2000</p>
+				<p id="d1d" align="center"> <a href="#"><input id="d1e"  type="submit" name="" value="LEARN MORE" align="center"></a></p>
+                </p>
+
+				
+			  
+		</div>
+		<div id="center">
+			<div id="left" >
+				<p ><h1 id="w">BARCELONA<h1>
+					<h3 id="x">FROM<br>
+                 $ 1000</h4>
+
+                <p id="y"> <a href="#"><input id="z"  type="submit" name="" value="LEARN MORE" align="center"></a></p>
+                </p>
+			</div>
+			<div id="middle" >
+				<p ><h1 id="w" >CAMBODIA<h1>
+					<h3 id="x">FROM<br>
+                 $ 1500</h4>
+
+                <p id="y"> <a href="#"><input id="z"  type="submit" name="" value="LEARN MORE" align="center"></a></p>
+                </p>
+				
+			</div>
+			<div id="right" >
+				<p ><h1 id="w" >COLOMBIA<h1>
+					<h3 id="x">FROM<br>
+                 $ 1600</h4>
+
+                <p id="y"> <a href="#"><input id="z"  type="submit" name="" value="LEARN MORE" align="center"></a></p>
+                </p>
+				
+			</div>
+		</div>
+		<div id="center1">
+			<div id="l1">
+				<h1 id="ts"> BOOKING FORM</h1><br><br>
+				<input  class="ic" type="text"  placeholder="Name:"> &nbsp;&nbsp;&nbsp;
+				<input  class="ic" type="email"  placeholder="Email:">&nbsp;&nbsp;&nbsp;<br><br>
+				<input  class="ic" type="text"  placeholder="Country:"> &nbsp;&nbsp;&nbsp;
+				<input  class="ic" type="email"  placeholder="Hotel">&nbsp;&nbsp;&nbsp;<br><br>
+                Check-In&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input  class="ic" type="date"  placeholder="01/01/2021"><br><br>
+                Check-Out&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input  class="ic" type="date"  placeholder="01/01/2021"><br><br>
+                Comfort<br><br>
+                <input  class="ic" type="radio" name="Comfort" value="true">Cheap&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input  class="ic" type="radio" name="Comfort" value="true">Standart&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input  class="ic" type="radio" name="Comfort" value="true">lux&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+                Adults&nbsp;&nbsp;&nbsp;&nbsp;
+                <select  class="ic">
+						<option >1</option>
+						<option >2</option>
+						<option >3</option>
+						<option >4</option>
+						<option >5</option>
+
+                </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Children&nbsp;&nbsp;&nbsp;&nbsp;
+                <select  class="ic">
+						<option >1</option>
+						<option >2</option>
+						<option >3</option>
+						<option >4</option>
+						<option >5</option>
+
+                </select><br><br>
+                Rooms&nbsp;&nbsp;&nbsp;&nbsp;
+                <select  class="ic">
+						<option >1</option>
+						<option >2</option>
+						<option >3</option>
+						<option >4</option>
+						<option >5</option>
+
+                </select><br><br>
+                <textarea  class="ic" rows="10" cols="50" placeholder="Message"></textarea><br><br>
+                <input id="i" type="submit" value="Submit" >
+
+
+			</div>
+			<div id="l2">
+				<div id="r1">
+					<h1 id="ts">WELCOME</h1><br>
+					<div id="r11"></div>
+					<div id="r22">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					<br><br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit
+				    </div>
+				    <br>
+				 
+				    Lorem ipsum dolor sit amet, consectetur adipisicing elit
+				</div>
+				<div id="r2">
+					<h1 id="ts">CLIENT QUOTES</h1><br>
+					<div id="r21"></div>
+					<div id="r22a">
+					>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					
+					
+					<font color="red" ><h4 id="ts" align="right">MIRANDA BROWN</h4></font>
+				    </div>
+				    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				    <br><br>
+				    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+				     
+				 <input  id="i" type="submit" value="more">
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div id="footer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YOUR TRIP (C) 2014 | PRIVACY POLICY | WEBSITE TEMPLATE DESIGNED BY TEMPLATEMONSTER.COM
+	
+				     
+		<div id="img1"></div>
+		<div id="img2"></div>
+		<div id="img3"></div> 
+	</div>
+
+
+</body>
+</html>
